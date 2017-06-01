@@ -1,0 +1,30 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    margin: 0
+    font-size: 14px
+    font-family: "Roboto", "Helvetica Neue", sans-serif
+
+$padding
+    small: 8px
+    default: 15px
+    big: 30px
+
+#nav
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: $padding.small $padding.default
+    background: green
+    color: white
+
+    .fa
+        font-size: 30px
+        padding-right: $padding.default
+        opacity: 0.7
+
+.content
+    padding: $padding.default
