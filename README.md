@@ -33,7 +33,7 @@ If you have extra time, we always like to go the extra mile for clients. Try som
 
 Fork the repo and install
 
-    git clone https://github.com/<your_github_id>/lumberjack-web
+    git clone https://github.com/<your_github_id>/lumberjack-web.git
     cd lumberjack-web
     npm install
 
