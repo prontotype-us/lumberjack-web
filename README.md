@@ -117,13 +117,15 @@ If you have extra time, we always like to go the extra mile for clients. Try som
 ### How it works
 
 The backend runs with two microservices:
-    * Server & API: `server.coffee` serves the web app page and runs the API. The API exposes some basic CRUD functions for the app's schema.
-    * Data Service: `data.coffee` is an in-memory database and basic data service. You can reset the database at any time by restarting the app.
+
+* Server & API: `server.coffee` serves the web app page and runs the API. The API exposes some basic CRUD functions for the app's schema.
+* Data Service: `data.coffee` is an in-memory database and basic data service. You can reset the database at any time by restarting the app.
 
 The frontend is a single-page application built in [React.js](https://facebook.github.io/react/):
-    * Jade Template: `views/app.jade` is a Jade template within which the React app is rendered.
-    * React App: `static/js/app.coffee` contains the React `App`. It uses a `Dispatcher` to talk to the API via [kefir-fetch](https://github.com/prontotype-us/kefir-fetch).
-    * Styl: `static/css/app.sass` contains all of the styling for the app.
+
+* Jade Template: `views/app.jade` is a Jade template within which the React app is rendered.
+* React App: `static/js/app.coffee` contains the React `App`. It uses a `Dispatcher` to talk to the API via [kefir-fetch](https://github.com/prontotype-us/kefir-fetch).
+* Styl: `static/css/app.sass` contains all of the styling for the app.
 
 ### What to do
 
