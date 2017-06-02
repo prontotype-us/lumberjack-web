@@ -100,25 +100,34 @@ If you have extra time, we always like to go the extra mile for clients. Try som
 
 2. Clone from your forked repo and install:
 
+    ```
     git clone https://github.com/<your_github_id>/lumberjack-web.git
     cd lumberjack-web
     npm install
+    ```
 
 3. Start the app:
 
+    ```
     npm run start
+    ```
 
 4. Browse to http://localhost:9775
 
 ### How it works
 
 The backend runs with two microservices:
-    * `server.coffee` serves the web app page and runs the API. The API exposes some basic CRUD functions for the app's schema. 
-    *  `data.coffee` is an in-memory database and basic data service. You can reset the database at any time by restarting the app.
+
+    * `server.coffee` serves the web app page and runs the API. The API exposes some basic CRUD functions for the app's schema.
+
+    * `data.coffee` is an in-memory database and basic data service. You can reset the database at any time by restarting the app.
 
 The frontend is a single-page application built in [React.js](https://facebook.github.io/react/):
+
     * `views/app.jade` is a Jade template within which the React app is rendered.
+
     * `static/js/app.coffee` contains the React `App`. It uses a `Dispatcher` to talk to the API via [kefir-fetch](https://github.com/prontotype-us/kefir-fetch).
+
     * `static/css/app.sass` contains all of the styling for the app.
 
 ### What to do
